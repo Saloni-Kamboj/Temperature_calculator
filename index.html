@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temaperature calculator</title>
+        <link rel="stylesheet" href="C:\Users\User\OneDrive\Desktop\Temperature cal\style.css">
+</head>
+<body>
+    
+    
+    <div class="container" >
+       <h1>Temperature Conversion Calculator</h1>
+        <div class="calculator" id="hide">
+            <div class="heading">
+                <p>Convert Temperature</p>
+
+            </div>
+            <form>
+            <label id="l1">From:</label>
+            <select name = "Temperature_unit" class="input" id="input1">
+                <option value = "value 1" >Celsius (°C)</option>
+                <option value = "value 2" selected="">Fahrenheit (°F)</option>
+                <option value = "value 3">Kelvin (K)</option>
+                <option value = "value 4">Rankine (°R)</option>
+             </select>
+             <br>
+             <label id="l2">To:</label>
+             <select name = "Temperature_unit" class="input" id="input2">
+                 <option value = "value 1" >Celsius (°C)</option>
+                 <option value = "value 2">Fahrenheit (°F)</option>
+                 <option value = "value 3" selected="">Kelvin (K)</option>
+                 <option value = "value 4">Rankine (°R)</option>
+              </select><br><br>
+              <label id="l3">Value to Convert</label>
+              <br>
+              <input type="number" id="val" value="">
+              <br>
+              <input type="button" value="Clear" id="btn1" onclick="clearall()">
+              <input type="button" value="Calculate" id="btn2" onclick="cal()" >
+              </form>
+              <br>
+              <div class="result" id="res">
+                <p id="ans">Answer:</p>
+               <div id="ans1">
+
+               </div>
+               <br>
+               <hr>
+              <p id="formula">Formula</p>
+              <br>
+              <hr>
+              <div class="step" id="div1">
+               
+              </div>
+              
+              </div>
+              
+              
+
+        </div>
+    </div>
+    <script src="C:\Users\User\OneDrive\Desktop\Temperature cal\javascript.js">
+    </script>
+</body>
+</html>
